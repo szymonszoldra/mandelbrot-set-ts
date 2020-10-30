@@ -17,16 +17,40 @@ tsc index.ts
 
 Then you can use index.html as a standard HTML file - open in browser or via liveserver.
 
-## Example output on SIZE=5000
+## Example output on SIZE=16000 256000pixels
 
-50% size
+normal size
 
-![output](https://raw.githubusercontent.com/szymonszoldra/mandelbrot-set-ts/main/docs/50percent.png)
+![output](https://raw.githubusercontent.com/szymonszoldra/mandelbrot-set-ts/main/docs/basic.png)
 
-100% size
+2x zoom
 
-![output](https://raw.githubusercontent.com/szymonszoldra/mandelbrot-set-ts/main/docs/100percent.png)
+![output](https://raw.githubusercontent.com/szymonszoldra/mandelbrot-set-ts/main/docs/zoom2x.png)
 
-200% size
+4x zoom
 
-![output](https://raw.githubusercontent.com/szymonszoldra/mandelbrot-set-ts/main/docs/200percent.png)
+![output](https://raw.githubusercontent.com/szymonszoldra/mandelbrot-set-ts/main/docs/zoom4x.png)
+
+6x zoom
+
+![output](https://raw.githubusercontent.com/szymonszoldra/mandelbrot-set-ts/main/docs/zoom6x.png)
+
+8x zoom
+
+![output](https://raw.githubusercontent.com/szymonszoldra/mandelbrot-set-ts/main/docs/zoom8x.png)
+
+11x zoom
+
+![output](https://raw.githubusercontent.com/szymonszoldra/mandelbrot-set-ts/main/docs/zoom11x.png)
+
+22x zoom
+
+![output](https://raw.githubusercontent.com/szymonszoldra/mandelbrot-set-ts/main/docs/zoom22x.png)
+
+50x zoom
+
+![output](https://raw.githubusercontent.com/szymonszoldra/mandelbrot-set-ts/main/docs/zoom50x.png)
+
+111x zoom
+
+![output](https://raw.githubusercontent.com/szymonszoldra/mandelbrot-set-ts/main/docs/zoom111x.png)
