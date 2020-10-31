@@ -69,9 +69,9 @@ for (let y = 0; y < SIZE; y++) {
 
       const point = new Complex(real, imaginary)
       
-      var returnedValue = isInTheMandelbrotSet(point)
+      const returnedValue = isInTheMandelbrotSet(point)
 
-      if (returnedValue == -1) {
+      if (returnedValue === -1) {
           colorThePointBlack(i);
       } else {
           colorThePoint(i, returnedValue);
