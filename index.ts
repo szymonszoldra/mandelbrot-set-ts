@@ -1,11 +1,11 @@
 const SIZE = 5000;
 
-interface complex {
+interface Complex {
   r: number;
   i: number;
 }
 
-class Complex implements complex {
+class ComplexNumber implements Complex {
   r:number;
   i:number;
 
@@ -25,15 +25,15 @@ const imageData = ctx.createImageData(SIZE, SIZE) as ImageData;
 
 
 const isInTheMandelbrotSet = (point: Complex): number => {
-  let z = new Complex();
+  let z = new ComplexNumber();
 
   for (let i = 0; i < 255; i++){
-    const z2 = new Complex(
+    const z2 = new ComplexNumber(
       z.r * z.r - z.i * z.i,
       z.r * z.i + z.i * z.r
       );
 
-     z = new Complex(
+    z = new ComplexNumber(
       z2.r + point.r,
       z2.i + point.i
     );
@@ -65,7 +65,7 @@ for (let y = 0; y < SIZE; y++) {
     const i = y * (SIZE * 4) + x * 4;
     const real = (x / SIZE) * 4 - 2;
     const imaginary = (y / SIZE) * 4 - 2;
-    const point = new Complex(real, imaginary);
+    const point = new ComplexNumber(real, imaginary);
 
     const returnedValue = isInTheMandelbrotSet(point);
 
