@@ -31,12 +31,12 @@ const isInTheMandelbrotSet = (point: Complex): number => {
     const z2 = new Complex(
       z.r * z.r - z.i * z.i,
       z.r * z.i + z.i * z.r
-      )
+      );
 
      z = new Complex(
       z2.r + point.r,
       z2.i + point.i
-    )
+    );
 
     if (z.r * z.r + z.i * z.i > 4) {
       return i;
@@ -62,20 +62,18 @@ const colorThePoint = (i: number, returnedValue: number): void => {
 
 for (let y = 0; y < SIZE; y++) {
   for (let x = 0; x < SIZE; x++) {
-      const i = y * (SIZE * 4) + x * 4;
-      
-      const real = (x / SIZE) * 4 - 2;
-      const imaginary = (y / SIZE) * 4 - 2;
+    const i = y * (SIZE * 4) + x * 4;
+    const real = (x / SIZE) * 4 - 2;
+    const imaginary = (y / SIZE) * 4 - 2;
+    const point = new Complex(real, imaginary);
 
-      const point = new Complex(real, imaginary)
-      
-      const returnedValue = isInTheMandelbrotSet(point)
+    const returnedValue = isInTheMandelbrotSet(point);
 
-      if (returnedValue === -1) {
-          colorThePointBlack(i);
-      } else {
-          colorThePoint(i, returnedValue);
-      }
+    if (returnedValue === -1) {
+      colorThePointBlack(i);
+    } else {
+      colorThePoint(i, returnedValue);
+    }
   }
 }
 
