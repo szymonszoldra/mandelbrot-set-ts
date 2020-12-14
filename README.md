@@ -17,7 +17,7 @@ tsc index.ts
 
 Then you can use index.html as a standard HTML file - open in browser or via liveserver.
 
-## Example output on SIZE=16000 256000pixels
+## Example output on SIZE=16000 256 000 000 pixels
 
 normal size
 
